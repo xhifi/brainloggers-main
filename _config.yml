@@ -18,7 +18,7 @@ address:
   leftover:
 
 baseurl: '/' # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
+url: https://xhifi.github.io/brainloggers-main # the base hostname & protocol for your site
 
 author:
   youtube:
