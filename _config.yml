@@ -1,0 +1,41 @@
+# site settings
+site: BSv5 Template
+email: info@brainloggers.co.uk
+description: This is official jekyll template for bootstrap 5 by Brianloggers.
+phone: +44 20 3995 4105
+socials:
+  facebook:
+  whatsapp:
+  instagram:
+  twitter:
+  soundcloud:
+  spotify:
+address:
+  street: 2- Sanders Parade, Greyhound Lane
+  city: Streatham
+  state: London
+  country: UK
+  leftover:
+
+baseurl: '/' # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+
+author:
+  youtube:
+  facebook:
+  github:
+  instagram:
+  twitter:
+
+# build settings
+markdown: kramdown
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 
+
+sass:
+  sass_dir: assets/css
+  style:    compressed
