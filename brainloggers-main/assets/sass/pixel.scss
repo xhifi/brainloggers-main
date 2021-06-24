@@ -1,0 +1,93 @@
+---
+---
+/*
+
+=========================================================
+* Pixel Pro Bootstrap 5 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kit/pixel-pro-premium-bootstrap-5-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Contact us if you want to remove it.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap');
+
+// update variables here
+@import "custom/variables";
+
+@import "pixel/tp_src/bootstrap/scss/functions";
+@import "pixel/variables";
+
+// Third party
+
+@import 'pixel/tp_src/vanillajs/datepicker.scss';
+@import "pixel/tp_src/chartist/scss/chartist.scss";
+
+// Bootstrap
+@import "pixel/tp_src/bootstrap/scss/variables";
+@import "pixel/tp_src/bootstrap/scss/mixins";
+@import "pixel/tp_src/bootstrap/scss/utilities";
+
+// Bootstrap Layout & components
+@import "pixel/tp_src/bootstrap/scss/root";
+@import "pixel/tp_src/bootstrap/scss/reboot";
+@import "pixel/tp_src/bootstrap/scss/type";
+@import "pixel/tp_src/bootstrap/scss/images";
+@import "pixel/tp_src/bootstrap/scss/containers";
+@import "pixel/tp_src/bootstrap/scss/grid";
+@import "pixel/tp_src/bootstrap/scss/tables";
+@import "pixel/tp_src/bootstrap/scss/forms";
+@import "pixel/tp_src/bootstrap/scss/buttons";
+@import "pixel/tp_src/bootstrap/scss/transitions";
+@import "pixel/tp_src/bootstrap/scss/dropdown";
+@import "pixel/tp_src/bootstrap/scss/button-group";
+@import "pixel/tp_src/bootstrap/scss/nav";
+@import "pixel/tp_src/bootstrap/scss/navbar";
+@import "pixel/tp_src/bootstrap/scss/card";
+@import "pixel/tp_src/bootstrap/scss/accordion";
+@import "pixel/tp_src/bootstrap/scss/breadcrumb";
+@import "pixel/tp_src/bootstrap/scss/pagination";
+@import "pixel/tp_src/bootstrap/scss/badge";
+@import "pixel/tp_src/bootstrap/scss/alert";
+@import "pixel/tp_src/bootstrap/scss/progress";
+@import "pixel/tp_src/bootstrap/scss/list-group";
+@import "pixel/tp_src/bootstrap/scss/close";
+@import "pixel/tp_src/bootstrap/scss/toasts";
+@import "pixel/tp_src/bootstrap/scss/modal";
+@import "pixel/tp_src/bootstrap/scss/tooltip";
+@import "pixel/tp_src/bootstrap/scss/popover";
+@import "pixel/tp_src/bootstrap/scss/carousel";
+@import "pixel/tp_src/bootstrap/scss/spinners";
+
+// Helpers
+@import "pixel/tp_src/bootstrap/scss/helpers";
+
+// Utilities
+@import "pixel/tp_src/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// Mixins & functions
+@import "pixel/mixins";
+@import "pixel/functions";
+
+// Utilities
+@import "pixel/utilities";
+
+// Layout
+@import "pixel/layout";
+
+// Components
+@import "pixel/components";
+
+// write your custom styles here!
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+}

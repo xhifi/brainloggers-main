@@ -1,0 +1,61 @@
+<header class="header-global">
+    <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-theme-secondary headroom--not-bottom headroom--pinned headroom--top">
+        <div class="container position-relative">
+            <a class="navbar-brand me-lg-5" href="./index.html">
+                <img class="navbar-brand-dark" src="{{site.baseurl}}assets/img/brand/brainloggers-light.svg" alt="Logo light">
+                <img class="navbar-brand-light" src="{{site.baseurl}}assets/img/brand/brainloggers-light.svg" alt="Logo dark">
+            </a>
+            <div class="navbar-collapse collapse me-auto" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="./index.html">
+                                <img src="./assets/img/brand/dark.svg" alt="Themesberg logo">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <a href="#navbar_global" class="fas fa-times" data-bs-toggle="collapse" data-bs-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    
+                    {% for item in site.data.navigation.header %}
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link {% if item.subfolderitems %}dropdown-toggle{% endif %}" {% if item.subfolderitems %} data-bs-toggle="dropdown" id="{{item.dropdown-type}}" aria-expanded="false" {% endif %}>
+                            {{item.title}}
+                            {% if item.subfolderitems %}
+                            <span class="fas fa-angle-down nav-link-arrow ms-1"></span>
+                            {% endif %}
+                        </a>
+                        {% if item.subfolderitems %}
+                        <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="supportDropdown">
+                            <div class="col-auto px-0">
+                                <div class="list-group list-group-flush">
+                                    {% for entry in item.subfolderitems %}
+                                    <a href="https://themesberg.com/docs/bootstrap-5/pixel/getting-started/quick-start/" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                        <span class="icon icon-sm"><span class="fas fa-file-alt"></span></span>
+                                        <div class="ms-4">
+                                            <span class="d-block font-small fw-bold mb-0">{{ entry.page }}</span>
+                                            <span class="small">Examples and guides</span>
+                                        </div>
+                                    </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="https://themesberg.com/docs/bootstrap-5/pixel/getting-started/quick-start/" target="_blank" class="btn btn-outline-gray-100 d-none d-lg-inline me-md-3"><span class="fas fa-book me-2"></span> Docs v5.3</a>
+                <a href="https://themesberg.com/product/ui-kit/pixel-pro-premium-bootstrap-5-ui-kit" target="_blank" class="btn btn-tertiary"><span class="fas fa-shopping-cart me-2"></span> Buy now</a>
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>

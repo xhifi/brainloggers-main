@@ -1,0 +1,101 @@
+---
+title: Home
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Brainloggers Web & Graphic Design and IT Consultants">
+    <meta name="author" content="Brainloggers">
+    <meta name="description" content="Website Design - Graphic Design - IT & Security Experts">
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.brainloggers.co.uk">
+    <meta property="og:title" content="Brainloggers">
+    <meta property="og:description" content="Website Design - Graphic Design - IT & Security Experts">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://demo.themesberg.com/pixel-pro">
+    <meta property="twitter:title" content="Pixel Pro - Premium Bootstrap 5 UI Kit">
+    <meta property="twitter:description" content="Premium Bootstrap 5 UI Kit featuring over 1000 components and 35 example pages created by Themesberg.">
+    <meta property="twitter:image" content="">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}assets/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{site.baseurl}}assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="{{site.baseurl}}assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fontawesome -->
+    <link type="text/css" href="{{site.baseurl}}assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Glide JS -->
+    <link rel="stylesheet" href="{{site.baseurl}}assets/vendor/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="{{site.baseurl}}assets/vendor/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!-- Pixel CSS -->
+    <link type="text/css" href="{{site.baseurl}}assets/sass/pixel.css" rel="stylesheet">
+
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+</head>
+
+<body>
+{% include header-dark-test.html %}
+    
+
+<section class="section-lg container">
+    {% for item in site.data.navigation.header %}
+        <li>{{ item.title }}</li>
+            {% if item.subfolderitems %}
+            <ul>
+                {% for entry in item.subfolderitems %}
+                    <li>{{ entry.page }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        
+    {% endfor %}
+
+</section>
+
+
+
+
+    <!-- Core -->
+<!-- <script src="{{site.baseurl}}assets/cssvendor/@popperjs/core/dist/umd/popper.min.js"></script> -->
+<script src="{{site.baseurl}}assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/headroom.js/dist/headroom.min.js"></script>
+
+<!-- Vendor JS -->
+<script src="{{site.baseurl}}assets/vendor/onscreen/dist/on-screen.umd.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/nouislider/distribute/nouislider.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/vivus/dist/vivus.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/chartist/dist/chartist.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/@glidejs/glide/dist/glide.min.js"></script>
+<script src="{{site.baseurl}}assets/vendor/countup.js/dist/countUp.umd.js"></script>
+<script src="{{site.baseurl}}assets/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- pixel JS -->
+<script src="{{site.baseurl}}assets/js/pixel.js"></script>
+
+</body>
+
+</html>
