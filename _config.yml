@@ -37,5 +37,5 @@ exclude:
 - README.md 
 
 sass:
-  sass_dir: assets/css
+  sass_dir: assets/sass
   style:    compressed
