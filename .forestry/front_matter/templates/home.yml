@@ -1,0 +1,9 @@
+---
+label: Home
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+pages:
+- _posts/this-is-a-new-site-post.md
