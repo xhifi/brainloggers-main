@@ -5,3 +5,23 @@ fields:
 - type: text
   name: title
   label: title
+- name: image_on_or_off
+  type: boolean
+  label: Image On or Off
+  default: true
+- name: image_if_used_above
+  type: file
+  config:
+    maxSize: 
+  label: Image if used above
+  showOnly:
+    field: image_on_or_off
+    value: true
+- name: add_tags_to_the_post
+  type: tag_list
+  default: []
+  label: Add Tags to the post
+- name: a_field_group
+  type: field_group
+  config: {}
+  label: A field group
